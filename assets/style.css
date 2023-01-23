@@ -2,6 +2,80 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0%;
-    margin: 0%;
+   font-size: 40px;
+   border-top: 0px;
+   padding-left: 11px;
+   margin-bottom: 10px;
 }
+
+.timer {
+ margin-right: 40px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslateblue
+}
+
+.container {
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    width: 1000px;
+    box-shadow: 0 0 15px 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    margin: 50px 0;
+}
+
+#question {
+ margin-right: 500px;  
+ font-style: bold;
+ font-size: 60px;
+}
+
+
+.btn {
+    color: black;
+    font-size: 35px;
+    background-color: rgb(150, 80, 150);
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    box-shadow: inset 800px 0 0 0 rgb(162, 78, 179);
+}
+
+#start {
+    font-size: 100px;
+    background-color: rgb(150, 80, 150);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#start:hover {
+    box-shadow: inset 800px 0 0 0 rgb(162, 78, 179);
+}
+
+.hide {
+    display: none;
+}
+
+
