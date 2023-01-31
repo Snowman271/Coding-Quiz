@@ -20,9 +20,8 @@ function nextQuestion() {
  }   
 }
 
-//timer 
- timerStart = setInterval(clockTick, 1000);
- timerEl.textContent = time;
+ timerStart = setInterval(timeCountDown, 1000);
+ timerEl.textContent = timeAmt;
 
 function showQuestion(question) {
     qustionEl.innerText = question.question
@@ -41,10 +40,6 @@ function resetAns() {
    }
 }
 
-function selectAnswer() {
-    
-}
-
 const questions = [
     {
         question: 'what is da + d',
@@ -60,9 +55,5 @@ const questions = [
 function timeCountDown() {
     timeAmt--;
     timerEl.textContent = timeAmt;
-  
-    // check if user ran out of time
-    if (time <= 0) {
-      quizEnd();
-    }
   }
+  
