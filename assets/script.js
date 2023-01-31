@@ -40,20 +40,21 @@ function resetAns() {
    }
 }
 
-const questions = [
+var questions = [
     {
-        question: 'what is da + d',
-        answers: [
-        { text: 'mom', correct: false },
-        { text: 'steve', correct: false },
-        { text: 'dad', correct: true },
-        { text: 'bob', correct: false }
-        ]
+      title: 'Commonly used data types DO NOT include:',
+      choices: ['strings', 'booleans', 'alerts', 'numbers'],
+      answer: 'alerts',
+    },
+    {
+      title: 'The condition in an if / else statement is enclosed within ____.',
+      choices: ['quotes', 'curly brackets', 'parentheses', 'square brackets'],
+      answer: 'parentheses',
     }
-]
+];
+
 
 function timeCountDown() {
     timeAmt--;
     timerEl.textContent = timeAmt;
   }
-  
